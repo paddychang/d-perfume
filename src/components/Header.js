@@ -21,19 +21,19 @@ const Header = forwardRef(({ open, setOpen }, ref) => {
   return (
     <div className="container header">
       <h1 className="logo">
-        <Link to="/">
+        <Link to="/d-perfume/">
           <img src={logo} alt="logo" />
         </Link>
       </h1>
       <ul className="menu">
         <li className="sm-none mg-r2">
-          <Link to="/product">
+          <Link to="/d-perfume/product">
             <StoreIcon className="icons" />
             Product
           </Link>
         </li>
         <li className="sm-none mg-r2">
-          <Link to="/login">
+          <Link to="/d-perfume/login">
             <PersonIcon className="icons" />
             Log in
           </Link>
@@ -61,7 +61,7 @@ const Header = forwardRef(({ open, setOpen }, ref) => {
             style={open ? { display: "block" } : { display: "none" }}
             ref={ref}
           >
-            <a href="/product">Product</a>
+            <a href="/d-perfume/product">Product</a>
             <a href="/#">Wishlist</a>
             <a href="/#">Blog</a>
             <a href="/#">Contact</a>
