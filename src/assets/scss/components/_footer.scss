@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img {
+            height: 38px;
+            width: 128px;
+            margin-right: 20px;
+        }
+        .mg-r-36 {
+            margin-right: 36px;
+        }
+        a {
+            display: block;
+            color: $white;
+            padding: 10px;
+            font-weight: normal;
+        }
+    }
+    @include sm {
+        width: auto;
+        .footer-links {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,182 @@
+.mg-t-80 {
+    margin-top: 80px;
+    @include sm {
+        margin-top: 40px;
+    }
+}
+.mg-b-60 {
+    margin-bottom: 60px;
+}
+.mg-b-48 {
+    margin-bottom: 48px;
+}
+.mg-b-28 {
+    margin-bottom: 28px;
+}
+.mg-b-24 {
+    margin-bottom: 24px;
+}
+.mg-b-20 {
+    margin-bottom: 20px;
+}
+.mg-b-16 {
+    margin-bottom: 16px;
+}
+.mg-r-47 {
+    margin-right: 47px;
+}
+.mg-r-31 {
+    margin-right: 31px;
+    @include sm {
+        margin-right: 26px;
+    }
+}
+.mg-r-8 {
+    margin-right: 8px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @include sm {
+        justify-content: space-between;
+    }
+}
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include sm {
+        flex-direction: column;
+    }
+}
+
+.long-width,
+.short-width {
+    width: 350px;
+    height: 38px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    color: $info;
+    border: 1px solid #ced4da;
+    @include sm {
+        width: 225px;
+    }
+}
+.short-width,
+.area-short-width {
+    width: 160px;
+    color: $info;
+    border: 1px solid #ced4da;
+    height: 38px;
+    @include sm {
+        width: 170px;
+    }
+}
+.area-short-width {
+    @include sm {
+        width: 80px;
+    }
+}
+
+.blank-box {
+    width: 64px;
+    height: 22px;
+}
+
+.mobile-noshow {
+    display: none;
+}
+
+.title {
+    color: black;
+    border-bottom: 1px solid $info;
+    line-height: 22px;
+    width: 635px;
+    font-weight: bold;
+    @include sm {
+        width: 350px;
+    }
+}
+.member-actions {
+    width: 100px;
+    h5,
+    a {
+        font-family: $font-family-ch;
+    }
+    a {
+        padding: 2px 0px;
+        color: $info;
+    }
+    a:hover {
+        border-bottom: 2px solid $primary;
+    }
+    @include sm {
+        width: 100%;
+        text-align: center;
+        order: 0;
+        flex-direction: row;
+    }
+}
+.form {
+    h6,
+    a {
+        padding: 8px 0;
+        color: $info;
+    }
+    .gender {
+        width: 59px;
+        height: 38px;
+        text-align: center;
+        color: $info;
+        border: 1px solid #ced4da;
+    }
+    .checkbox {
+        width: 15px;
+        height: 15px;
+        background-color: $primary;
+        border-radius: 3px;
+        margin-right: 4px;
+    }
+    .btn {
+        background-color: $primary;
+        border: 1px solid $primary;
+        border-radius: 4px;
+        width: 160px;
+        height: 38px;
+        text-align: center;
+        padding: 8px 46px;
+        font-family: $font-family-ch;
+        line-height: 22px;
+        color: white;
+        font-weight: normal;
+    }
+    .btn:hover {
+        color: $primary;
+        background: white;
+    }
+    @include sm {
+        order: 2;
+        width: 100%;
+        .flex-row {
+            flex-direction: row;
+        }
+    }
+}
+
+.details {
+    .info {
+        justify-content: flex-start;
+    }
+    p {
+        color: #a5a5a5;
+    }
+    @include sm {
+        order: 1;
+        .info {
+            flex-direction: row;
+        }
+    }
+}

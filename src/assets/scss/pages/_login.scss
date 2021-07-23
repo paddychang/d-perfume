@@ -1,0 +1,75 @@
+.mg-t-80 {
+    margin-top: 80px;
+    @include sm {
+        margin-top: 40px;
+    }
+}
+.mg-b-82 {
+    margin-bottom: 82px;
+    @include sm {
+        margin-bottom: 120px;
+    }
+}
+.mg-b-12 {
+    margin-bottom: 12px;
+}
+.mg-b-20 {
+    margin-bottom: 20px;
+}
+.mg-b-43 {
+    margin-bottom: 43px;
+}
+.mg-r-8 {
+    margin-right: 8px;
+}
+
+.login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 730px;
+        height: 730px;
+        object-fit: cover;
+    }
+    .login-r {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        input {
+            width: 350px;
+            height: 38px;
+        }
+    }
+    .actions {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        h6 {
+            color: $primary;
+            font-weight: bold;
+        }
+        a {
+            color: $primary;
+            background: white;
+            font-size: 16px;
+            padding: 8px 17px;
+            border: 1px solid $primary;
+        }
+        a:hover {
+            color: white;
+            background: $primary;
+        }
+    }
+    @include sm {
+        flex-direction: column;
+        justify-content: space-between;
+        .mg-b-28 {
+            margin-bottom: 28px;
+        }
+        img {
+            height: 220px;
+        }
+    }
+}

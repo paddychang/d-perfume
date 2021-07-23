@@ -1,0 +1,139 @@
+.row-r {
+    flex-direction: row-reverse;
+}
+.mg-b {
+    margin-bottom: 60px;
+    @include sm {
+        margin-bottom: 40px;
+    }
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .desc {
+        width: 350px;
+        height: 555px;
+        @include flex-col;
+        align-items: flex-start;
+    }
+    img {
+        width: 555px;
+        height: 555px;
+        display: block;
+        object-fit: cover;
+    }
+    .desc-l {
+        height: 1080px;
+        width: 350px;
+        @include flex-col;
+        align-items: flex-start;
+        font-weight: 600;
+    }
+    .img-l {
+        height: 1080px;
+        width: 555px;
+    }
+    @include sm {
+        flex-direction: column-reverse;
+        align-items: center;
+        .desc {
+            width: 100%;
+            height: auto;
+            margin-left: 0px;
+            margin-right: 0px;
+            justify-content: flex-start;
+            margin-bottom: 32px;
+        }
+        img {
+            height: 350px;
+            width: 100%;
+        }
+        .desc-l {
+            width: 100%;
+            justify-content: flex-start;
+            height: auto;
+            margin-bottom: 32px;
+            margin-left: 0px;
+            margin-right: 0px;
+            h6 {
+                text-align: justify;
+                text-justify: inter-word;
+            }
+            .mg-b3-25 {
+                margin-bottom: 20px;
+            }
+        }
+        .img-l {
+            height: 680%;
+            width: 100%;
+        }
+    }
+}
+
+.promot {
+    height: 728px;
+    width: 100%;
+    background: $gray100;
+    .goods-list {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .goods-card {
+            img {
+                height: 540px;
+                width: 350px;
+            }
+            .sold-out {
+                height: 540px;
+                width: 350px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                h4 {
+                    height: 540px;
+                    width: 350px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    background: rgba(gray, 0.3);
+                }
+            }
+        }
+    }
+    @include sm {
+        height: auto;
+        .goods-list {
+            flex-direction: column;
+        }
+        .goods-card {
+            margin-top: 32px;
+        }
+        .mg-b32 {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.recycle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 730px;
+        height: 520px;
+    }
+    .recycle-desc {
+        width: 350px;
+    }
+    @include sm {
+        flex-direction: column;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

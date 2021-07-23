@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 52px;
+    h5 {
+        color: white;
+        margin-right: 28px;
+        font-weight: normal;
+    }
+    @include sm {
+        display: none;
+    }
+}

@@ -1,0 +1,53 @@
+.mg-t {
+    margin-top: 80px;
+    @include sm {
+        margin-top: 42px;
+    }
+}
+.list-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .item {
+        @include flex-col;
+        align-items: flex-start;
+        margin-bottom: 58px;
+        h5 {
+            font-weight: 600;
+        }
+        li img {
+            width: 255px;
+            height: 255px;
+            object-fit: cover;
+        }
+        .icon {
+            color: $primary;
+            margin-right: 11px;
+        }
+    }
+    @include sm {
+        flex-wrap: wrap;
+        .item {
+            li img {
+                width: 165px;
+                height: 165px;
+            }
+        }
+    }
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 97px;
+    margin-bottom: 60px;
+    li a {
+        padding: 10px;
+    }
+    a:hover {
+        color: $primary;
+        text-decoration: underline;
+    }
+}
