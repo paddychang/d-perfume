@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 // Components
 import Header from "components/Header";
 import Footer from "components/Footer";
@@ -14,11 +14,11 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/d-perfume/" component={Home} />
-        <Route exact path="/d-perfume/product" component={Product} />
-        <Route exact path="/d-perfume/product/chanel" component={Brand} />
-        <Route path="/d-perfume/login" component={Login} />
-        <Route path="/d-perfume/member" component={Member} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/product" component={Product} />
+        <Route exact path="/product/chanel" component={Brand} />
+        <Route path="/login" component={Login} />
+        <Route path="/member" component={Member} />
       </Switch>
       <Footer />
     </Router>
