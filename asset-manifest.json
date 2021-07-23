@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/d-perfume/static/css/main.970ebbe6.chunk.css",
-    "main.js": "/d-perfume/static/js/main.59854366.chunk.js",
-    "main.js.map": "/d-perfume/static/js/main.59854366.chunk.js.map",
+    "main.js": "/d-perfume/static/js/main.9fad2800.chunk.js",
+    "main.js.map": "/d-perfume/static/js/main.9fad2800.chunk.js.map",
     "runtime-main.js": "/d-perfume/static/js/runtime-main.062529c4.js",
     "runtime-main.js.map": "/d-perfume/static/js/runtime-main.062529c4.js.map",
     "static/js/2.3fc08299.chunk.js": "/d-perfume/static/js/2.3fc08299.chunk.js",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.062529c4.js",
     "static/js/2.3fc08299.chunk.js",
     "static/css/main.970ebbe6.chunk.css",
-    "static/js/main.59854366.chunk.js"
+    "static/js/main.9fad2800.chunk.js"
   ]
 }
